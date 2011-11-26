@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72055F5114816F9600F34A4D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72055F5014816F9600F34A4D /* Cocoa.framework */; };
+		72055F5B14816F9600F34A4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72055F5914816F9600F34A4D /* InfoPlist.strings */; };
+		72055F5D14816F9600F34A4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72055F5C14816F9600F34A4D /* main.m */; };
+		72055F6114816F9600F34A4D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 72055F5F14816F9600F34A4D /* Credits.rtf */; };
+		72055F6414816F9600F34A4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72055F6314816F9600F34A4D /* AppDelegate.m */; };
+		72055F6714816F9700F34A4D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72055F6514816F9700F34A4D /* MainMenu.xib */; };
+		72055F6F1481795A00F34A4D /* CurrentlyPlayingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72055F6E1481795A00F34A4D /* CurrentlyPlayingView.xib */; };
+		72055F7314817A9B00F34A4D /* CurrentlyPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72055F7114817A9B00F34A4D /* CurrentlyPlayingViewController.m */; };
+		724D8252148192F80025905C /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724D8251148192F80025905C /* ScriptingBridge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		72055F4C14816F9600F34A4D /* GitTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72055F5014816F9600F34A4D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		72055F5314816F9600F34A4D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		72055F5414816F9600F34A4D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		72055F5514816F9600F34A4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72055F5814816F9600F34A4D /* GitTunes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GitTunes-Info.plist"; sourceTree = "<group>"; };
+		72055F5A14816F9600F34A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72055F5C14816F9600F34A4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72055F5E14816F9600F34A4D /* GitTunes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitTunes-Prefix.pch"; sourceTree = "<group>"; };
+		72055F6014816F9600F34A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		72055F6214816F9600F34A4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		72055F6314816F9600F34A4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		72055F6614816F9700F34A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		72055F6E1481795A00F34A4D /* CurrentlyPlayingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurrentlyPlayingView.xib; path = Views/CurrentlyPlayingView.xib; sourceTree = "<group>"; };
+		72055F7014817A9B00F34A4D /* CurrentlyPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentlyPlayingViewController.h; path = Classes/CurrentlyPlayingViewController.h; sourceTree = "<group>"; };
+		72055F7114817A9B00F34A4D /* CurrentlyPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentlyPlayingViewController.m; path = Classes/CurrentlyPlayingViewController.m; sourceTree = "<group>"; };
+		724D824F148192E00025905C /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iTunes.h; path = Classes/iTunes.h; sourceTree = "<group>"; };
+		724D8250148192E00025905C /* Spotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spotify.h; path = Classes/Spotify.h; sourceTree = "<group>"; };
+		724D8251148192F80025905C /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72055F4914816F9600F34A4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724D8252148192F80025905C /* ScriptingBridge.framework in Frameworks */,
+				72055F5114816F9600F34A4D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72055F4114816F9600F34A4D = {
+			isa = PBXGroup;
+			children = (
+				72055F5614816F9600F34A4D /* GitTunes */,
+				72055F4F14816F9600F34A4D /* Frameworks */,
+				72055F4D14816F9600F34A4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72055F4D14816F9600F34A4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72055F4C14816F9600F34A4D /* GitTunes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72055F4F14816F9600F34A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724D8251148192F80025905C /* ScriptingBridge.framework */,
+				72055F5014816F9600F34A4D /* Cocoa.framework */,
+				72055F5214816F9600F34A4D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72055F5214816F9600F34A4D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72055F5314816F9600F34A4D /* AppKit.framework */,
+				72055F5414816F9600F34A4D /* CoreData.framework */,
+				72055F5514816F9600F34A4D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		72055F5614816F9600F34A4D /* GitTunes */ = {
+			isa = PBXGroup;
+			children = (
+				724D824D148192C70025905C /* Application Headers */,
+				72055F7514817AA100F34A4D /* View Controllers */,
+				72055F6D1481793200F34A4D /* Views */,
+				72055F6214816F9600F34A4D /* AppDelegate.h */,
+				72055F6314816F9600F34A4D /* AppDelegate.m */,
+				72055F6514816F9700F34A4D /* MainMenu.xib */,
+				72055F5714816F9600F34A4D /* Supporting Files */,
+			);
+			path = GitTunes;
+			sourceTree = "<group>";
+		};
+		72055F5714816F9600F34A4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72055F5814816F9600F34A4D /* GitTunes-Info.plist */,
+				72055F5914816F9600F34A4D /* InfoPlist.strings */,
+				72055F5C14816F9600F34A4D /* main.m */,
+				72055F5E14816F9600F34A4D /* GitTunes-Prefix.pch */,
+				72055F5F14816F9600F34A4D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72055F6D1481793200F34A4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72055F6E1481795A00F34A4D /* CurrentlyPlayingView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		72055F7514817AA100F34A4D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72055F7014817A9B00F34A4D /* CurrentlyPlayingViewController.h */,
+				72055F7114817A9B00F34A4D /* CurrentlyPlayingViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		724D824D148192C70025905C /* Application Headers */ = {
+			isa = PBXGroup;
+			children = (
+				724D824F148192E00025905C /* iTunes.h */,
+				724D8250148192E00025905C /* Spotify.h */,
+			);
+			name = "Application Headers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72055F4B14816F9600F34A4D /* GitTunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72055F6A14816F9700F34A4D /* Build configuration list for PBXNativeTarget "GitTunes" */;
+			buildPhases = (
+				72055F4814816F9600F34A4D /* Sources */,
+				72055F4914816F9600F34A4D /* Frameworks */,
+				72055F4A14816F9600F34A4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitTunes;
+			productName = GitTunes;
+			productReference = 72055F4C14816F9600F34A4D /* GitTunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72055F4314816F9600F34A4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Foureyes.me;
+			};
+			buildConfigurationList = 72055F4614816F9600F34A4D /* Build configuration list for PBXProject "GitTunes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72055F4114816F9600F34A4D;
+			productRefGroup = 72055F4D14816F9600F34A4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72055F4B14816F9600F34A4D /* GitTunes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72055F4A14816F9600F34A4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72055F5B14816F9600F34A4D /* InfoPlist.strings in Resources */,
+				72055F6114816F9600F34A4D /* Credits.rtf in Resources */,
+				72055F6714816F9700F34A4D /* MainMenu.xib in Resources */,
+				72055F6F1481795A00F34A4D /* CurrentlyPlayingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72055F4814816F9600F34A4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72055F5D14816F9600F34A4D /* main.m in Sources */,
+				72055F6414816F9600F34A4D /* AppDelegate.m in Sources */,
+				72055F7314817A9B00F34A4D /* CurrentlyPlayingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72055F5914816F9600F34A4D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72055F5A14816F9600F34A4D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		72055F5F14816F9600F34A4D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72055F6014816F9600F34A4D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		72055F6514816F9700F34A4D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72055F6614816F9700F34A4D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72055F6814816F9700F34A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		72055F6914816F9700F34A4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		72055F6B14816F9700F34A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GitTunes/GitTunes-Prefix.pch";
+				INFOPLIST_FILE = "GitTunes/GitTunes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		72055F6C14816F9700F34A4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GitTunes/GitTunes-Prefix.pch";
+				INFOPLIST_FILE = "GitTunes/GitTunes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72055F4614816F9600F34A4D /* Build configuration list for PBXProject "GitTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72055F6814816F9700F34A4D /* Debug */,
+				72055F6914816F9700F34A4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72055F6A14816F9700F34A4D /* Build configuration list for PBXNativeTarget "GitTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72055F6B14816F9700F34A4D /* Debug */,
+				72055F6C14816F9700F34A4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72055F4314816F9600F34A4D /* Project object */;
+}

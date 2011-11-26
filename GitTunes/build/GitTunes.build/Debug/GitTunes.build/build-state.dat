@@ -1,0 +1,278 @@
+TGitTunes
+v4
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Info.plist GitTunes/GitTunes-Info.plist
+cProcessPCH /var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch.pth GitTunes/GitTunes-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/AppDelegate.o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/main.o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/CurrentlyPlayingViewController.o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/MacOS/GitTunes normal x86_64
+cCpResource GitTunes/en.lproj/Credits.rtf build/Debug/GitTunes.app/Contents/Resources/en.lproj/Credits.rtf
+cCopyStringsFile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj/InfoPlist.strings GitTunes/en.lproj/InfoPlist.strings
+cCompileXIB /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/MainMenu.xib
+cCompileXIB /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Views/CurrentlyPlayingView.xib
+cTouch /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app
+
+N/Developer/SDKs/MacOSX10.7.sdk
+c000000004E8537B500000000000000EE
+t1317353397
+s238
+
+N/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004E547FD30000000000002470
+t1314160595
+s9328
+
+N/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/ScriptingBridge.framework/ScriptingBridge
+c000000004E547FD5000000000000CA64
+t1314160597
+s51812
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.h
+c000000004ED145FD000000000000028A
+t1322337789
+s650
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.m
+c000000004ED14632000000000000077E
+t1322337842
+s1918
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.h
+c000000004ED168B60000000000000246
+t1322346678
+s582
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.m
+c000000004ED16F100000000000001423
+t1322348304
+s5155
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/Spotify.h
+c000000004ED15AC60000000000000969
+t1322343110
+s2409
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/iTunes.h
+c000000004ED15AB400000000000054A3
+t1322343092
+s21667
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/GitTunes-Prefix.pch
+c000000004ED138160000000000000091
+t1322334230
+s145
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Views/CurrentlyPlayingView.xib
+c000000004ED16F790000000000004155
+t1322348409
+s16725
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/Credits.rtf
+c000000004ED1381600000000000001B4
+t1322334230
+s436
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/InfoPlist.strings
+c000000004ED13816000000000000002D
+t1322334230
+s45
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/MainMenu.xib
+c000000004ED16D1800000000000242F8
+t1322347800
+s148216
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/main.m
+c000000004ED1381600000000000000FF
+t1322334230
+s255
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app
+t1322348310
+s102
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Info.plist
+t1322342042
+s1485
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/MacOS/GitTunes
+t1322348310
+s36272
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/PkgInfo
+t1322342042
+s8
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/CurrentlyPlayingView.nib
+t1322347096
+s3858
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj/Credits.rtf
+t1322342044
+s436
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj/InfoPlist.strings
+t1322342044
+s92
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj/MainMenu.nib
+t1322347811
+s27402
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/AppDelegate.o
+t1322347089
+s37412
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/CurrentlyPlayingViewController.o
+t1322348309
+s38540
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/GitTunes.LinkFileList
+c000000004ED1569A00000000000001AD
+t1322342042
+s429
+
+N/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/main.o
+t1322342044
+s2264
+
+N/var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch.pth
+t1322342043
+s11075392
+
+NGitTunes/GitTunes-Info.plist
+c000000004ED13AE80000000000000493
+t1322334952
+s1171
+
+CBuild AST from /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.m
+r0
+
+CBuild AST from /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.m
+r0
+
+CBuild AST from /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies1e5387fda681b441^c4e8a1fda681b441^---0#1#0#--18"Check dependencies36"F4643AAA-9272-4584-BDA4-09A11651A734-
+
+CCompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/AppDelegate.o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s344039888.676048
+e344039889.606141
+r1
+xCompileC
+xbuild/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.m6631add0a181b441^c72c9bd1a181b441^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.m0000000000000000^2443"CompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/AppDelegate.o GitTunes/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-generated-files.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-own-target-headers.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-all-target-headers.hmap -iquote /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-project-headers.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/include -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/DerivedSources/x86_64 -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/DerivedSources -F/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug -include /var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch -MMD -MT dependencies -MF /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/AppDelegate.d -c /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/AppDelegate.m -o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/AppDelegate.o36"29450F6D-AAAD-4124-933D-36390F60E7B4-
+
+CCompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/CurrentlyPlayingViewController.o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s344041107.541578
+e344041109.205819
+r1
+xCompileC
+xbuild/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/CurrentlyPlayingViewController.o
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.m22c78a93a681b441^3ab03495a681b441^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.m0000000000000000^2554"CompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/CurrentlyPlayingViewController.o GitTunes/Classes/CurrentlyPlayingViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-generated-files.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-own-target-headers.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-all-target-headers.hmap -iquote /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-project-headers.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/include -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/DerivedSources/x86_64 -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/DerivedSources -F/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug -include /var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch -MMD -MT dependencies -MF /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/CurrentlyPlayingViewController.d -c /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Classes/CurrentlyPlayingViewController.m -o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/CurrentlyPlayingViewController.o36"321ECDA9-7F70-476A-BD96-FC211C9A18BF-
+
+CCompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/main.o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s344034843.663375
+e344034844.414316
+r1
+xCompileC
+xbuild/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/main.o
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/main.mf6f0a91b8e81b441^bf106a1c8e81b441^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/main.m0000000000000000^2408"CompileC build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/main.o GitTunes/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-generated-files.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-own-target-headers.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-all-target-headers.hmap -iquote /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-project-headers.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/include -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/DerivedSources/x86_64 -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/DerivedSources -F/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug -include /var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch -MMD -MT dependencies -MF /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/main.d -c /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/main.m -o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/main.o36"1BDEB1EE-A443-414B-BDD2-9472AB82EDCC-
+
+CCompileXIB /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Views/CurrentlyPlayingView.xib
+s344041213.791468
+e344041218.300644
+r1
+xCompileXIB
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Views/CurrentlyPlayingView.xib
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compiling /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Views/CurrentlyPlayingView.xib25b3cafda681b441^9e954c02a781b441^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Views/CurrentlyPlayingView.xib0000000000000000^551"CompileXIB GitTunes/Views/CurrentlyPlayingView.xib    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/CurrentlyPlayingView.nib /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/Views/CurrentlyPlayingView.xib --sdk /Developer/SDKs/MacOSX10.7.sdk36"40A76091-82DA-40EE-B30F-BA47DE63A67C-
+
+CCompileXIB /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/MainMenu.xib
+s344040603.463152
+e344040611.541634
+r1
+xCompileXIB
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/MainMenu.xib
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compiling /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/MainMenu.xiba0a6769ba481b441^9f3d8ba3a481b441^---0#0#0#-19%DVTDocumentLocation2@107"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/MainMenu.xib0000000000000000^530"CompileXIB GitTunes/en.lproj/MainMenu.xib    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj/MainMenu.nib /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.7.sdk36"9F93F3B9-9B28-4BF3-AA2C-E44FBB59E4CF-
+
+CCopyStringsFile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj/InfoPlist.strings GitTunes/en.lproj/InfoPlist.strings
+s344034844.795715
+e344034844.798843
+r1
+xCopyStringsFile
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj/InfoPlist.strings
+xGitTunes/en.lproj/InfoPlist.strings
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy GitTunes/en.lproj/InfoPlist.strings82c7cb1c8e81b441^a488cc1c8e81b441^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/InfoPlist.strings0000000000000000^434"CopyStringsFile build/Debug/GitTunes.app/Contents/Resources/en.lproj/InfoPlist.strings GitTunes/en.lproj/InfoPlist.strings    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj -- GitTunes/en.lproj/InfoPlist.strings36"F7C5087D-7CF6-407B-BA24-62435C1751B3-
+
+CCpResource GitTunes/en.lproj/Credits.rtf build/Debug/GitTunes.app/Contents/Resources/en.lproj/Credits.rtf
+s344034844.796207
+e344034844.799508
+r1
+xCpResource
+xGitTunes/en.lproj/Credits.rtf
+xbuild/Debug/GitTunes.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug/GitTunes.app/Contents/Resources/en.lproj/Credits.rtf26e0cb1c8e81b441^d2accc1c8e81b441^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj/Credits.rtf00f44896ddffdf42^491"CpResource GitTunes/en.lproj/Credits.rtf build/Debug/GitTunes.app/Contents/Resources/en.lproj/Credits.rtf    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/en.lproj/Credits.rtf /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Resources/en.lproj36"455177DD-4248-4942-8AFA-D343E7809C4C-
+
+CLd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/MacOS/GitTunes normal x86_64
+s344041109.212989
+e344041110.151810
+r1
+xLd
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/MacOS/GitTunes
+xnormal
+xx86_64
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Link /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/MacOS/GitTunes789c3695a681b441^01de2696a681b441^---0#0#0#--748"Ld build/Debug/GitTunes.app/Contents/MacOS/GitTunes normal x86_64    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Developer/usr/bin/clang -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug -F/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug -filelist /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/Objects-normal/x86_64/GitTunes.LinkFileList -mmacosx-version-min=10.7 -framework ScriptingBridge -framework Cocoa -o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/MacOS/GitTunes36"CF432E31-78EA-42EC-B751-F4DCD104F85C-
+
+CProcessInfoPlistFile /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Info.plist GitTunes/GitTunes-Info.plist
+s344034842.268537
+e344034842.273257
+r1
+xProcessInfoPlistFile
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Info.plist
+xGitTunes/GitTunes-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Process GitTunes/GitTunes-Info.plist7dcf441a8e81b441^1af8451a8e81b441^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/GitTunes-Info.plist0000000000000000^483"ProcessInfoPlistFile build/Debug/GitTunes.app/Contents/Info.plist GitTunes/GitTunes-Info.plist    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    builtin-infoPlistUtility GitTunes/GitTunes-Info.plist -genpkginfo /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app/Contents/Info.plist36"A3D78C26-E90E-4F46-93D3-30E0E8A4C288-
+
+CProcessPCH /Users/brianmichel/Library/Developer/Xcode/DerivedData/GitTunes-ghfpcdcrwtyzpveghyidssfohsbh/Index/PrecompiledHeaders/GitTunes-Prefix-cxpibuvcewehorafnxztyzalbwqp_ast/GitTunes-Prefix.pch.pth GitTunes/GitTunes-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch.pth GitTunes/GitTunes-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s344034842.281380
+e344034843.656072
+r1
+xProcessPCH
+x/var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch.pth
+xGitTunes/GitTunes-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile GitTunes/GitTunes-Prefix.pch8926481a8e81b441^23f4a71b8e81b441^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/GitTunes-Prefix.pch0000000000000000^2427"ProcessPCH /var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch.pth GitTunes/GitTunes-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-generated-files.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-own-target-headers.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-all-target-headers.hmap -iquote /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/GitTunes-project-headers.hmap -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/include -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/DerivedSources/x86_64 -I/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/GitTunes.build/Debug/GitTunes.build/DerivedSources -F/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug -c /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/GitTunes/GitTunes-Prefix.pch -o /var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/d_/qv2fltld74qgsh13f5jwlb7w0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GitTunes-Prefix-fiuosfmeovztyydiivmjpylhyqkp/GitTunes-Prefix.pch.d36"186D5065-1B01-4CBD-868B-A1AB5A7E1B23-
+
+CTouch /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app
+s344041218.311289
+e344041218.574393
+r1
+xTouch
+x/Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Touch /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app5dc04f02a781b441^74b79302a781b441^---0#0#0#--207"Touch build/Debug/GitTunes.app    cd /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes    /usr/bin/touch -c /Users/brianmichel/Development/Objective-C/GitTunes/GitTunes/build/Debug/GitTunes.app36"3A3808AB-3383-4191-A5D5-B840CA18A1A3-
+
