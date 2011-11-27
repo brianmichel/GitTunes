@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:git-tunes/git-tunes.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:GitTunes/GitTunes.xcodeproj">
    </FileRef>
 </Workspace>

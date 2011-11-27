@@ -7,6 +7,7 @@
 //
 
 #import "CurrentlyPlayingViewController.h"
+#import "FileOperationManager.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define kSpotifyBundlePlayerInfoKey @"com.spotify.client.PlaybackStateChanged"
@@ -58,6 +59,7 @@
 - (void)updateTrackInfoFromNote:(NSNotification *)note {
   [self updateTrackInfoFromDictionary:[note userInfo]];
   [self.albumArtImage setImage:[self getAlbumArtwork]];
+  [[FileOperationManager sharedManager] writeSongToLog:[note userInfo]];
 }
 
 - (void)updateTrackInfoFromDictionary:(NSDictionary *)songDictionary {

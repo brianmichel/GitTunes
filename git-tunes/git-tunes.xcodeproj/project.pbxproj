@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		724D82AB14820D510025905C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724D82AA14820D510025905C /* Foundation.framework */; };
+		724D82AE14820D520025905C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724D82AD14820D520025905C /* main.m */; };
+		724D82B214820D520025905C /* git_tunes.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 724D82B114820D520025905C /* git_tunes.1 */; };
+		724D82BC14820EF40025905C /* FileOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 724D82B914820EF40025905C /* FileOperationManager.m */; };
+		724D82BD14820EF40025905C /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 724D82BB14820EF40025905C /* NSFileManager+DirectoryLocations.m */; };
+		724D82C11482144C0025905C /* GGGitTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 724D82C01482144C0025905C /* GGGitTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		724D82A414820D510025905C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				724D82B214820D520025905C /* git_tunes.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		724D82A614820D510025905C /* git-tunes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "git-tunes"; sourceTree = BUILT_PRODUCTS_DIR; };
+		724D82AA14820D510025905C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		724D82AD14820D520025905C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		724D82B014820D520025905C /* git-tunes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "git-tunes-Prefix.pch"; sourceTree = "<group>"; };
+		724D82B114820D520025905C /* git_tunes.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = git_tunes.1; sourceTree = "<group>"; };
+		724D82B814820EF40025905C /* FileOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileOperationManager.h; path = ../../GitTunes/GitTunes/Classes/FileOperationManager.h; sourceTree = "<group>"; };
+		724D82B914820EF40025905C /* FileOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileOperationManager.m; path = ../../GitTunes/GitTunes/Classes/FileOperationManager.m; sourceTree = "<group>"; };
+		724D82BA14820EF40025905C /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+DirectoryLocations.h"; path = "../../GitTunes/GitTunes/NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		724D82BB14820EF40025905C /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+DirectoryLocations.m"; path = "../../GitTunes/GitTunes/NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		724D82BF1482144C0025905C /* GGGitTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGGitTool.h; sourceTree = "<group>"; };
+		724D82C01482144C0025905C /* GGGitTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGGitTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		724D82A314820D510025905C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724D82AB14820D510025905C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		724D829B14820D510025905C = {
+			isa = PBXGroup;
+			children = (
+				724D82AC14820D510025905C /* git-tunes */,
+				724D82A914820D510025905C /* Frameworks */,
+				724D82A714820D510025905C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		724D82A714820D510025905C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				724D82A614820D510025905C /* git-tunes */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		724D82A914820D510025905C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724D82AA14820D510025905C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		724D82AC14820D510025905C /* git-tunes */ = {
+			isa = PBXGroup;
+			children = (
+				724D82BE148214250025905C /* git helper */,
+				724D82AD14820D520025905C /* main.m */,
+				724D82B114820D520025905C /* git_tunes.1 */,
+				724D82AF14820D520025905C /* Supporting Files */,
+			);
+			path = "git-tunes";
+			sourceTree = "<group>";
+		};
+		724D82AF14820D520025905C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				724D82B814820EF40025905C /* FileOperationManager.h */,
+				724D82B914820EF40025905C /* FileOperationManager.m */,
+				724D82BA14820EF40025905C /* NSFileManager+DirectoryLocations.h */,
+				724D82BB14820EF40025905C /* NSFileManager+DirectoryLocations.m */,
+				724D82B014820D520025905C /* git-tunes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		724D82BE148214250025905C /* git helper */ = {
+			isa = PBXGroup;
+			children = (
+				724D82BF1482144C0025905C /* GGGitTool.h */,
+				724D82C01482144C0025905C /* GGGitTool.m */,
+			);
+			name = "git helper";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		724D82A514820D510025905C /* git-tunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 724D82B514820D520025905C /* Build configuration list for PBXNativeTarget "git-tunes" */;
+			buildPhases = (
+				724D82A214820D510025905C /* Sources */,
+				724D82A314820D510025905C /* Frameworks */,
+				724D82A414820D510025905C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "git-tunes";
+			productName = "git-tunes";
+			productReference = 724D82A614820D510025905C /* git-tunes */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		724D829D14820D510025905C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 724D82A014820D510025905C /* Build configuration list for PBXProject "git-tunes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 724D829B14820D510025905C;
+			productRefGroup = 724D82A714820D510025905C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				724D82A514820D510025905C /* git-tunes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		724D82A214820D510025905C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724D82AE14820D520025905C /* main.m in Sources */,
+				724D82BC14820EF40025905C /* FileOperationManager.m in Sources */,
+				724D82BD14820EF40025905C /* NSFileManager+DirectoryLocations.m in Sources */,
+				724D82C11482144C0025905C /* GGGitTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		724D82B314820D520025905C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		724D82B414820D520025905C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		724D82B614820D520025905C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "git-tunes/git-tunes-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		724D82B714820D520025905C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "git-tunes/git-tunes-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		724D82A014820D510025905C /* Build configuration list for PBXProject "git-tunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724D82B314820D520025905C /* Debug */,
+				724D82B414820D520025905C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		724D82B514820D520025905C /* Build configuration list for PBXNativeTarget "git-tunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724D82B614820D520025905C /* Debug */,
+				724D82B714820D520025905C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 724D829D14820D510025905C /* Project object */;
+}

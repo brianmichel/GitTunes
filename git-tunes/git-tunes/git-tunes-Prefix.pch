@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'git-tunes' target in the 'git-tunes' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif
