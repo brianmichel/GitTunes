@@ -22,6 +22,7 @@
 		724D82731481F0430025905C /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = 724D82721481F0430025905C /* record.png */; };
 		724D82771481F9B30025905C /* FileOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 724D82761481F9B30025905C /* FileOperationManager.m */; };
 		724D827B1481FD530025905C /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 724D827A1481FD530025905C /* NSFileManager+DirectoryLocations.m */; };
+		724D82C91482D8070025905C /* AlbumArtProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 724D82C81482D8070025905C /* AlbumArtProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		724D82781481FAF10025905C /* GitTunes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GitTunes.entitlements; sourceTree = "<group>"; };
 		724D82791481FD530025905C /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		724D827A1481FD530025905C /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		724D82C71482D8070025905C /* AlbumArtProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumArtProgressView.h; path = Views/AlbumArtProgressView.h; sourceTree = "<group>"; };
+		724D82C81482D8070025905C /* AlbumArtProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumArtProgressView.m; path = Views/AlbumArtProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				72055F6E1481795A00F34A4D /* CurrentlyPlayingView.xib */,
+				724D82C71482D8070025905C /* AlbumArtProgressView.h */,
+				724D82C81482D8070025905C /* AlbumArtProgressView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				724D82601481CE2F0025905C /* ToolbarItemButton.m in Sources */,
 				724D82771481F9B30025905C /* FileOperationManager.m in Sources */,
 				724D827B1481FD530025905C /* NSFileManager+DirectoryLocations.m in Sources */,
+				724D82C91482D8070025905C /* AlbumArtProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

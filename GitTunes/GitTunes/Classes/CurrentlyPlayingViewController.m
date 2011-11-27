@@ -12,27 +12,32 @@
 
 #define kSpotifyBundlePlayerInfoKey @"com.spotify.client.PlaybackStateChanged"
 #define kiTunesBundlePlayerInfoKey @"com.apple.iTunes.playerInfo"
-#define kiTunesArtistKey @"Artist"
-#define kiTunesSongKey @"Name"
-#define kiTunesAlbumKey @"Album"
+#define kArtistKey @"Artist"
+#define kSongKey @"Name"
+#define kAlbumKey @"Album"
 #define kiTunesSongTotalTime @"Total Time"
+#define kSpotifySongTotalTime @"Duration"
+#define kMaxValueKey @"maxValue"
+#define kCurrentSongKey @"currentSong"
+#define kPercentagePlayedNeeded 0.25
 
 @interface CurrentlyPlayingViewController (Private)
 - (void)updateTrackInfoFromNote:(NSNotification *)note;
 - (void)updateTrackInfoFromDictionary:(NSDictionary *)songDictionary;
 - (NSImage *)getAlbumArtwork;
 - (NSDictionary *)currentlyPlayingSongDictionary;
+- (void)resetAndStartProgressUpdateTimerWithMax:(double)max andSong:(NSDictionary *)song;
 @end
 
 @implementation CurrentlyPlayingViewController
 @synthesize songTitleField = __songTitleField;
 @synthesize artistAlbumTextField = __artistAlbumTextField;
+@synthesize songProgressTimer = __songProgressTimer;
 @synthesize spotify = __spotify;
 @synthesize albumArtImage = _albumArtImage;
 @synthesize iTunes = __iTunes;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
@@ -44,22 +49,25 @@
     return self;
 }
 
-- (void)awakeFromNib {
-  [super awakeFromNib];
-  [self.view setFrame:NSMakeRect(0, 0, self.view.frame.size.width, 50)];
-}
-
 - (void)loadView {
   [super loadView];
   [self updateTrackInfoFromDictionary:[self currentlyPlayingSongDictionary]];
   [self.albumArtImage setImage:[self getAlbumArtwork]];
 }
 
-#pragma mark - Setters For Different Programs
+#pragma mark - Update Track Information
 - (void)updateTrackInfoFromNote:(NSNotification *)note {
   [self updateTrackInfoFromDictionary:[note userInfo]];
+  double maxValue = 0.0;
+  if ([note.name isEqualToString:kiTunesBundlePlayerInfoKey]) {
+    int totalTime = [(NSNumber *)[[note userInfo] objectForKey:kiTunesSongTotalTime] intValue];
+    maxValue = (totalTime / 1000) * kPercentagePlayedNeeded;
+  } else {
+    int totalTime = [(NSNumber *)[[note userInfo] objectForKey:kSpotifySongTotalTime] intValue];
+    maxValue = totalTime * kPercentagePlayedNeeded;
+  }
+  [self resetAndStartProgressUpdateTimerWithMax:maxValue andSong:[note userInfo]];
   [self.albumArtImage setImage:[self getAlbumArtwork]];
-  [[FileOperationManager sharedManager] writeSongToLog:[note userInfo]];
 }
 
 - (void)updateTrackInfoFromDictionary:(NSDictionary *)songDictionary {
@@ -67,7 +75,7 @@
   
   NSMutableAttributedString *str = [[NSMutableAttributedString alloc] init];
   
-  NSAttributedString *tmp = [[[NSAttributedString alloc] initWithString:[songDictionary objectForKey:kiTunesArtistKey] attributes:[NSDictionary dictionaryWithObject:boldSmallFont forKey:NSFontAttributeName]] autorelease];
+  NSAttributedString *tmp = [[[NSAttributedString alloc] initWithString:[songDictionary objectForKey:kArtistKey] attributes:[NSDictionary dictionaryWithObject:boldSmallFont forKey:NSFontAttributeName]] autorelease];
   [str appendAttributedString:tmp];
   
   NSMutableParagraphStyle *pStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
@@ -76,16 +84,41 @@
   NSDictionary *attribs = [NSDictionary dictionaryWithObjectsAndKeys:self.artistAlbumTextField.font, NSFontAttributeName, pStyle, NSParagraphStyleAttributeName, nil];  
   [pStyle release];
   
-  tmp = [[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" - %@",[songDictionary objectForKey:kiTunesAlbumKey]] attributes:attribs] autorelease];
+  tmp = [[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" - %@",[songDictionary objectForKey:kAlbumKey]] attributes:attribs] autorelease];
   [str appendAttributedString:tmp];
   
   [self.artistAlbumTextField setAttributedStringValue:str];
   [str release];
   
-  [self.songTitleField setStringValue:[songDictionary objectForKey:kiTunesSongKey]];
+  [self.songTitleField setStringValue:[songDictionary objectForKey:kSongKey]];
 }
 
 #pragma mark - Actions
+- (void)resetAndStartProgressUpdateTimerWithMax:(double)max andSong:(NSDictionary *)song {
+  [self.albumArtImage.progressIndicator setDoubleValue:0];
+  [self.albumArtImage.progressIndicator setMaxValue:round(max)];
+  [self.songProgressTimer invalidate];
+  self.songProgressTimer = nil;
+  NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:song, kCurrentSongKey, [NSNumber numberWithDouble:round(max)], kMaxValueKey, nil];
+  self.songProgressTimer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(updateProgress:) userInfo:dictionary repeats:YES];
+  [[NSRunLoop currentRunLoop] addTimer:self.songProgressTimer forMode:NSEventTrackingRunLoopMode];
+}
+
+- (void)updateProgress:(NSTimer *)timer {
+  static double counter;
+  counter += 1;
+  
+  NSNumber *maxValue = [[timer userInfo] valueForKey:kMaxValueKey];
+  NSDictionary *song = [[timer userInfo] valueForKey:kCurrentSongKey];
+  
+  [self.albumArtImage.progressIndicator incrementBy:1.0];
+  if ([maxValue doubleValue] == counter) {
+    [[FileOperationManager sharedManager] writeSongToLog:song];
+    [timer invalidate];
+    counter = 0;
+  }
+}
+
 - (NSImage *)getAlbumArtwork {
   NSImage *returnImage = nil;
   if ([self.iTunes isRunning] && self.iTunes.playerState == iTunesEPlSPlaying) {
@@ -99,25 +132,21 @@
       returnImage = [[self.spotify currentTrack] artwork];
     }
   }
-  if (returnImage && [returnImage isKindOfClass:[NSImage class]]) {
-    return returnImage;
-  } else {
-    return [NSImage imageNamed:@"record"];
-  }
+  return (returnImage && [returnImage isKindOfClass:[NSImage class]]) ? returnImage : [NSImage imageNamed:@"record"];
 }
 
 - (NSDictionary *)currentlyPlayingSongDictionary {
   NSMutableDictionary *songDict = [NSMutableDictionary dictionaryWithCapacity:3];
   if ([self.iTunes isRunning] && self.iTunes.playerState == iTunesEPlSPlaying) {
     iTunesTrack *track = [self.iTunes currentTrack];
-    [songDict setValue:track.artist forKey:kiTunesArtistKey];
-    [songDict setValue:track.album forKey:kiTunesAlbumKey];
-    [songDict setValue:track.name forKey:kiTunesSongKey];
+    [songDict setValue:track.artist forKey:kArtistKey];
+    [songDict setValue:track.album forKey:kAlbumKey];
+    [songDict setValue:track.name forKey:kSongKey];
   } else if ([self.spotify isRunning] && self.spotify.playerState == SpotifyEPlSPlaying) {
     SpotifyTrack *track = [self.spotify currentTrack];
-    [songDict setValue:track.artist forKey:kiTunesArtistKey];
-    [songDict setValue:track.album forKey:kiTunesAlbumKey];
-    [songDict setValue:track.name forKey:kiTunesSongKey];
+    [songDict setValue:track.artist forKey:kArtistKey];
+    [songDict setValue:track.album forKey:kAlbumKey];
+    [songDict setValue:track.name forKey:kSongKey];
   }
   return songDict;
 }
@@ -126,6 +155,7 @@
   [__iTunes release];
   [__spotify release];
   [__songTitleField release];
+  [__songProgressTimer release];
   [__artistAlbumTextField release];
   [[NSDistributedNotificationCenter defaultCenter] removeObserver:self name:kiTunesBundlePlayerInfoKey object:nil];
   [[NSDistributedNotificationCenter defaultCenter] removeObserver:self name:kSpotifyBundlePlayerInfoKey object:nil];

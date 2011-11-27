@@ -9,13 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import "iTunes.h"
 #import "Spotify.h"
+#import "AlbumArtProgressView.h"
 
 @interface CurrentlyPlayingViewController : NSViewController
 
 @property (assign) IBOutlet NSTextField *songTitleField;
 @property (assign) IBOutlet NSTextField *artistAlbumTextField;
+@property (nonatomic, retain) NSTimer *songProgressTimer;
 @property (nonatomic, retain) iTunesApplication *iTunes;
 @property (nonatomic, retain) SpotifyApplication *spotify;
-@property (assign) IBOutlet NSImageView *albumArtImage;
+@property (assign) IBOutlet AlbumArtProgressView *albumArtImage;
 
 @end
