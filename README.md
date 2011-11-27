@@ -19,6 +19,10 @@ What Will It Do?
  4. Possibly work with GitHub to get this info displaying
  5. Visualize the data!
 
+Special Thanks
+--------------
+I'd like to thank [Andrew Wooster](https://github.com/wooster) for inspiring me with his [git-gps project](https://github.com/wooster/git-gps), as well as for borrowing his GGGitTool class!
+
 General Info
 ------------
 
