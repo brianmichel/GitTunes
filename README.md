@@ -3,6 +3,14 @@ GitTunes
 
  A simple application that will give you the ability to track and attach the music you've been listening to while creating awesome software!
 
+File Structure
+--------------
+ Here is a short overview of how things are laid out in this project...
+
+ * *README.md* (__you are here__, gives you an overview of the entire project)
+ * *GitTunes/* (contains all of the desktop application agent code)
+ * *git-tunes/* (contains all of the command line application code)
+
 What Does It Do?
 ----------------
 
