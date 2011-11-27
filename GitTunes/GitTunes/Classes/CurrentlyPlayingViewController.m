@@ -101,7 +101,7 @@
   self.songProgressTimer = nil;
   NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:song, kCurrentSongKey, [NSNumber numberWithDouble:round(max)], kMaxValueKey, nil];
   self.songProgressTimer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(updateProgress:) userInfo:dictionary repeats:YES];
-  [[NSRunLoop currentRunLoop] addTimer:self.songProgressTimer forMode:NSEventTrackingRunLoopMode];
+  [[NSRunLoop currentRunLoop] addTimer:self.songProgressTimer forMode:NSRunLoopCommonModes];
 }
 
 - (void)updateProgress:(NSTimer *)timer {
