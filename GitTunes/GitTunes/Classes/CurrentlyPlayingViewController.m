@@ -37,6 +37,8 @@
         // Initialization code here.
       [[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTrackInfoFromNote:) name:kiTunesBundlePlayerInfoKey object:nil];
       [[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTrackInfoFromNote:) name:kSpotifyBundlePlayerInfoKey object:nil];
+      self.iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
+      self.spotify = [SBApplication applicationWithBundleIdentifier:@"com.spotify.client"];
     }  
     return self;
 }
@@ -44,8 +46,10 @@
 - (void)awakeFromNib {
   [super awakeFromNib];
   [self.view setFrame:NSMakeRect(0, 0, self.view.frame.size.width, 50)];
-  self.iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
-  self.spotify = [SBApplication applicationWithBundleIdentifier:@"com.spotify.client"];
+}
+
+- (void)loadView {
+  [super loadView];
   [self updateTrackInfoFromDictionary:[self currentlyPlayingSongDictionary]];
   [self.albumArtImage setImage:[self getAlbumArtwork]];
 }
@@ -68,6 +72,8 @@
   [pStyle setLineBreakMode:NSLineBreakByTruncatingTail];
   
   NSDictionary *attribs = [NSDictionary dictionaryWithObjectsAndKeys:self.artistAlbumTextField.font, NSFontAttributeName, pStyle, NSParagraphStyleAttributeName, nil];  
+  [pStyle release];
+  
   tmp = [[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" - %@",[songDictionary objectForKey:kiTunesAlbumKey]] attributes:attribs] autorelease];
   [str appendAttributedString:tmp];
   
@@ -79,18 +85,23 @@
 
 #pragma mark - Actions
 - (NSImage *)getAlbumArtwork {
+  NSImage *returnImage = nil;
   if ([self.iTunes isRunning] && self.iTunes.playerState == iTunesEPlSPlaying) {
     SBElementArray *art = [[self.iTunes currentTrack] artworks];
     if ([art count] >= 1) {
       iTunesArtwork *artwork = [art objectAtIndex:0];
-      return artwork.data;
+      returnImage = artwork.data;
     }
   } else if ([self.spotify isRunning] && self.spotify.playerState == SpotifyEPlSPlaying) {
     if ([[self.spotify currentTrack] artwork]) {
-      return [[self.spotify currentTrack] artwork];
+      returnImage = [[self.spotify currentTrack] artwork];
     }
   }
-  return nil;
+  if (returnImage && [returnImage isKindOfClass:[NSImage class]]) {
+    return returnImage;
+  } else {
+    return [NSImage imageNamed:@"record"];
+  }
 }
 
 - (NSDictionary *)currentlyPlayingSongDictionary {
@@ -112,10 +123,10 @@
 - (void)dealloc {
   [__iTunes release];
   [__spotify release];
-  [[NSDistributedNotificationCenter defaultCenter] removeObserver:self name:kiTunesBundlePlayerInfoKey object:nil];
-  [[NSDistributedNotificationCenter defaultCenter] removeObserver:self name:kSpotifyBundlePlayerInfoKey object:nil];
   [__songTitleField release];
   [__artistAlbumTextField release];
+  [[NSDistributedNotificationCenter defaultCenter] removeObserver:self name:kiTunesBundlePlayerInfoKey object:nil];
+  [[NSDistributedNotificationCenter defaultCenter] removeObserver:self name:kSpotifyBundlePlayerInfoKey object:nil];
   [super dealloc];
 }
 

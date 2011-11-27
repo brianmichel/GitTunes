@@ -7,11 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "ToolbarItemButton.h"
 
 
 @interface AppDelegate (Private)
 - (void)updateTrackInfo:(NSNotification *)note;
 - (NSString *)currentlyPlayingString;
+- (void)quitAction:(id)sender;
 @end
 
 @implementation AppDelegate
@@ -20,14 +22,20 @@
 @synthesize statusItem = __statusItem;
 @synthesize statusMenu = __statusMenu;
 @synthesize playingItem = __playingItem;
+@synthesize toolbar = __toolbar;
 @synthesize currentlyPlayingDictionary = __currentlyPlayingDictionary;
 @synthesize cpvc = __cpvc;
+@synthesize preferencesWindow = __preferencesWindow;
 
 - (void)dealloc
 {
-  [super dealloc];
   [__statusItem release];
   [__statusMenu release];
+  [__toolbar release];
+  [__currentlyPlayingDictionary release];
+  [__preferencesWindow release];
+  [__cpvc release];
+  [super dealloc];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -46,11 +54,6 @@
   self.cpvc = [[[CurrentlyPlayingViewController alloc] initWithNibName:@"CurrentlyPlayingView" bundle:nil] autorelease];
 }
 
-- (void)updateTrackInfo:(NSNotification *)note {
-  self.currentlyPlayingDictionary = [note userInfo];
-  [self.playingItem setTitle:[self currentlyPlayingString]];
-}
-
 #pragma mark - NSMenu Delegate
 - (NSInteger)numberOfItemsInMenu:(NSMenu *)menu {
   return 5;
@@ -60,13 +63,14 @@
   switch (index) {
     case 0:
       [item setTitle:@"Preferences"];
-      [item setAction:@selector(action:)];
+      [item setAction:@selector(showPreferences:)];
       break;
     case 2:
       [item setView:self.cpvc.view];
       break;
     case 4:
-      [item setTitle:@"Quit"];
+      [item setTitle:@"Quit GitTunes"];
+      [item setAction:@selector(quitAction:)];
       break;
     default:
       break;
@@ -74,8 +78,30 @@
   return YES;
 }
 
-- (void)action:(id)sender {
-  NSLog(@"OH HAI");
+#pragma mark - Toolbar Delegate
+- (NSArray*)toolbarAllowedItemIdentifiers:(NSToolbar*)toolbar {
+  return [NSArray arrayWithObjects:@"general", @"about", nil];
+}
+
+- (NSArray*)toolbarDefaultItemIdentifiers:(NSToolbar*)toolbar {
+  return [self toolbarAllowedItemIdentifiers:toolbar];
+}
+
+- (NSToolbarItem*)toolbar:(NSToolbar*)toolbar itemForItemIdentifier:(NSString*)str willBeInsertedIntoToolbar:(BOOL)flag {
+  if ([str isEqualToString:@"general"] || [str isEqualToString:@"about"]) {
+    ToolbarItemButton* item = [[ToolbarItemButton alloc] initWithItemIdentifier:str];
+    return [item autorelease];  
+  }
+  return nil;
+}
+
+#pragma mark - Actions
+- (void)quitAction:(id)sender {
+  [[NSApplication sharedApplication] terminate:nil];
+}
+
+- (void)showPreferences:(id)sender {
+  [self.preferencesWindow makeKeyAndOrderFront:self];
 }
 
 @end
